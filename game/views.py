@@ -2,6 +2,11 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Question
 from .forms import QuestionForm
 from django.contrib import messages
+import os
+import platform
+from django.http import HttpResponse
+from django.template import loader
+import threading 
 
 # --- Vistas del Menú y Gestión ---
 
@@ -104,3 +109,20 @@ def answer_question(request, pk):
     else:
         # Respuesta incorrecta
         return render(request, 'game/game_over.html', {'correct_answer': question.get_correct_answer_display(), 'score': request.session.get('score', 0)})
+    
+
+def shutdown_server(request):
+    """
+    Muestra una página de despedida y luego apaga el servidor en un hilo separado.
+    """
+    def kill_server():
+        # Espera un segundo para dar tiempo a que la respuesta HTML se envíe
+        threading.Timer(1.0, os.system, args=["taskkill /F /IM python.exe"]).start()
+
+    if platform.system() == "Windows":
+        # Inicia el proceso de apagado en segundo plano
+        kill_server()
+
+    # Carga y renderiza la plantilla de despedida
+    template = loader.get_template('game/shutdown_page.html')
+    return HttpResponse(template.render({}, request))
