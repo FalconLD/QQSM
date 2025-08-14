@@ -1,0 +1,25 @@
+{% extends 'game/base.html' %}
+
+{% block content %}
+<div class="card main-menu-card">
+    <h2>¡Juego Terminado!</h2>
+    
+    <!--
+        AQUÍ ESTÁ LA CORRECCIÓN:
+        Cambiamos 'question.get_correct_answer_display' por 'correct_answer',
+        que es la variable que la vista está enviando.
+    -->
+    <p class="lead">
+        La respuesta correcta era: 
+        <strong style="color: var(--white);">{{ correct_answer }}</strong>
+    </p>
+
+    <h4 style="margin-top: 1rem;">
+        Te vas a casa con <span class="text-warning">${{ score }}</span>.
+    </h4>
+
+    <a href="{% url 'home' %}" class="btn btn-secondary" style="margin-top: 2.5rem;">
+        Volver al Menú Principal
+    </a>
+</div>
+{% endblock %}

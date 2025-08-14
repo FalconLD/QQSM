@@ -1,0 +1,16 @@
+{% extends 'game/base.html' %}
+{% block content %}
+<div class="card main-menu-card bg-success">
+    <h2 class="display-3">¡FELICIDADES!</h2>
+    <p class="lead" style="margin-top: 1rem;">
+        Has respondido todas las preguntas correctamente.
+    </p>
+    <h4 style="margin-top: 2rem;">
+        ¡Eres el nuevo millonario con <span class="text-warning" style="font-size: 1.2em;">${{ score }}</span>!
+    </h4>
+
+    <a href="{% url 'home' %}" class="btn btn-secondary" style="margin-top: 2.5rem;">
+        Jugar de Nuevo
+    </a>
+</div>
+{% endblock %}

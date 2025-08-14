@@ -1,0 +1,26 @@
+{% extends 'game/base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2 style="text-align: center;">{{ action }} Pregunta</h2>
+    
+    <!-- Este es el formulario para CREAR o EDITAR, no para jugar -->
+    <form method="post" style="margin-top: 2rem;">
+        {% csrf_token %}
+        
+        <!-- Bucle que renderiza los campos del formulario de Django -->
+        {% for field in form %}
+            <div style="margin-bottom: 1.5rem;">
+                <label class="form-label">{{ field.label }}</label>
+                {{ field }}
+            </div>
+        {% endfor %}
+        
+        <!-- Botones para guardar o cancelar la edición -->
+        <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+            <a href="{% url 'manage_questions' %}" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

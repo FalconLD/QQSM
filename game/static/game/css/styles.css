@@ -1,0 +1,242 @@
+/* ===== FUENTES PERSONALIZADAS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ===== VARIABLES CSS ===== */
+:root {
+    --primary-blue: #3B82F6;
+    --deep-blue: #0F172A;
+    --card-bg-rgb: 30, 41, 59;
+    --cyan-accent: #06B6D4;
+    --intense-red: #fb1c1cff;
+    --white: #FFFFFF;
+    --text-primary: #E2E8F0;
+    --text-secondary: #94A3B8;
+    --shadow-blue: rgba(59, 130, 246, 0.25);
+    --green-accent: #109f00ce;
+}
+
+/* ===== RESET, BASE Y CERO SUBRAYADOS ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* ===== CAMBIO 1: NUEVA IMAGEN DE FONDO ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    min-height: 100vh;
+    color: var(--text-primary);
+    
+    /* Ruta actualizada a la nueva imagen */
+    background-image: url('../images/background.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: var(--deep-blue);
+}
+
+/* (El resto de las reglas base como .container, h1, etc., siguen igual) */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* ===== TÍTULO PRINCIPAL (CON BORDE NEGRO) ===== */
+h1.display-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    
+    text-shadow:
+        /* Borde Negro */
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000,
+        
+        /* Brillo Azul (original) */
+        0 0 15px var(--shadow-blue), 
+        0 0 30px var(--shadow-blue);
+        
+    animation: titleFlicker 5s ease-in-out infinite alternate;
+}
+@keyframes titleFlicker {
+    from { opacity: 0.95; transform: scale(1); }
+    to { opacity: 1; transform: scale(1.02); }
+}
+
+.card {
+    background: rgba(var(--card-bg-rgb), 0.85);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 20px var(--shadow-blue);
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+.main-menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ===== BOTONES (ESTILOS GENERALES) ===== */
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* (Botones .btn-primary, .btn-secondary, .btn-success sin cambios) */
+.btn-primary {
+    background: var(--primary-blue);
+    color: var(--white);
+}
+.btn-primary:hover {
+    background: #4B92F8;
+}
+
+.btn-secondary {
+    background: #334155;
+    color: var(--text-primary);
+}
+.btn-secondary:hover {
+    background: #475569;
+}
+
+.btn-success {
+    background: var(--green-accent);
+    color: var(--white);
+}
+.btn-success:hover {
+    background: #07da04ad;
+    box-shadow: 0 0 25px #10850ead; /* Efecto de brillo verde */
+}
+
+.btn-danger {
+    background: var(--intense-red);
+    color: var(--white);
+}
+.btn-danger:hover {
+    background: #EF4444; /* Rojo un poco más brillante */
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.5); /* Efecto de brillo rojo */
+}
+
+.btn-warning {
+    background: var(--cyan-accent);
+    color: var(--deep-blue); /* Texto oscuro para mejor legibilidad */
+    font-weight: 700;
+}
+.btn-warning:hover {
+    background: #22D3EE; /* Celeste más brillante */
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.4); /* Efecto de brillo celeste */
+}
+
+
+/* (El resto del CSS sigue igual) */
+
+.btn-outline-light {
+    background: rgba(15, 23, 42, 0.5);
+    border: 2px solid #334155;
+    color: var(--text-primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    padding: 1.25rem 2rem;
+    text-align: left;
+}
+
+.btn-outline-light:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: var(--primary-blue);
+    color: var(--white);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.lead {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+}
+
+.list-group-item {
+    background: #1E293B;
+    border: 1px solid #334155;
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.text-warning, .text-success {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--cyan-accent);
+}
+
+.alert {
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    border: none;
+}
+
+.alert-success { background: #047857; color: white; }
+.alert-danger { background: #991B1B; color: white; }
+.alert-info { background: #334155; color: white; }
+
+.form-control, .form-select {
+    background: var(--deep-blue);
+    border: 2px solid #334155;
+    border-radius: 10px;
+    color: var(--text-primary);
+    padding: 0.75rem 1rem;
+}
+.form-control:focus, .form-select:focus {
+    background: var(--deep-blue);
+    border-color: var(--primary-blue);
+    box-shadow: none;
+    color: var(--white);
+}

@@ -1,0 +1,25 @@
+{% extends 'game/base.html' %}
+
+{% block content %}
+<div class="card p-4">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h2 style="margin: 0;">Editor de Preguntas</h2>
+        <a href="{% url 'add_question' %}" class="btn btn-success">Agregar Nueva</a>
+    </div>
+
+    <ul class="list-group">
+        {% for q in questions %}
+        <li class="list-group-item" style="display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+            <span style="flex-grow: 1;"><span class="text-warning">${{ q.prize_level }}</span> - {{ q.text|truncatechars:50 }}</span>
+            <div style="display: flex; gap: 0.5rem; flex-shrink: 0;">
+                <a href="{% url 'edit_question' q.pk %}" class="btn btn-warning">Editar</a>
+                <a href="{% url 'delete_question' q.pk %}" class="btn btn-danger">Eliminar</a>
+            </div>
+        </li>
+        {% empty %}
+        <li class="list-group-item">No hay preguntas. ¡Agrega una para comenzar!</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}" class="btn btn-secondary" style="margin-top: 2rem; align-self: flex-start;">Volver al Menú</a>
+</div>
+{% endblock %}

@@ -1,0 +1,262 @@
+[
+    {
+        "model": "game.question",
+        "pk": 1,
+        "fields": {
+            "text": "En el contexto de los estudios sociales, ¿qué es la 'cultura'?",
+            "option_a": "Únicamente las obras de arte y la literatura de un país.",
+            "option_b": "Las formas de vida, saberes, costumbres y expresiones de un grupo humano.",
+            "option_c": "El nivel de educación formal que tiene una persona.",
+            "option_d": "Las leyes que gobiernan una sociedad.",
+            "correct_answer": "B",
+            "prize_level": 100
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 2,
+        "fields": {
+            "text": "La 'interculturalidad' se diferencia de la 'multiculturalidad' en que busca activamente:",
+            "option_a": "La separación de culturas para evitar conflictos.",
+            "option_b": "La coexistencia pasiva de diferentes grupos.",
+            "option_c": "El diálogo, el aprendizaje mutuo y las relaciones equitativas.",
+            "option_d": "La imposición de la cultura mayoritaria.",
+            "correct_answer": "C",
+            "prize_level": 200
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 3,
+        "fields": {
+            "text": "El término 'alteridad' se refiere a la capacidad de:",
+            "option_a": "Asimilarse completamente a otra cultura.",
+            "option_b": "Reconocer y valorar a los otros como seres diferentes pero iguales en dignidad.",
+            "option_c": "Identificar los errores en otras culturas.",
+            "option_d": "Alterar las propias costumbres para encajar.",
+            "correct_answer": "B",
+            "prize_level": 300
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 4,
+        "fields": {
+            "text": "La Constitución ecuatoriana de 2008 define al Ecuador como un Estado:",
+            "option_a": "Unitario y centralista.",
+            "option_b": "Socialista y laico.",
+            "option_c": "De bienestar y garantista.",
+            "option_d": "Plurinacional e Intercultural.",
+            "correct_answer": "D",
+            "prize_level": 500
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 5,
+        "fields": {
+            "text": "Desde una perspectiva social, la 'identidad' de una persona o grupo es considerada:",
+            "option_a": "Fija e inmutable desde el nacimiento.",
+            "option_b": "Una construcción social y dinámica que puede cambiar.",
+            "option_c": "Determinada únicamente por la biología.",
+            "option_d": "Un asunto puramente individual y sin influencias externas.",
+            "correct_answer": "B",
+            "prize_level": 1000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 6,
+        "fields": {
+            "text": "Un 'Estado Plurinacional' es aquel que reconoce oficialmente:",
+            "option_a": "La existencia de múltiples partidos políticos.",
+            "option_b": "La existencia de varias naciones y pueblos con identidades propias en su territorio.",
+            "option_c": "La libertad de tener múltiples nacionalidades para sus ciudadanos.",
+            "option_d": "La dependencia de varias naciones extranjeras.",
+            "correct_answer": "B",
+            "prize_level": 2000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 7,
+        "fields": {
+            "text": "El levantamiento indígena de 1990 en Ecuador es un hito histórico porque:",
+            "option_a": "Provocó la caída de un presidente.",
+            "option_b": "Marcó la primera vez que los indígenas participaron en elecciones.",
+            "option_c": "Visibilizó al movimiento indígena como un actor político de gran fuerza nacional.",
+            "option_d": "Logró la independencia económica del país.",
+            "correct_answer": "C",
+            "prize_level": 3000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 8,
+        "fields": {
+            "text": "La 'Cosmovisión Andina' se caracteriza por una relación con la naturaleza (Pachamama) basada en:",
+            "option_a": "La explotación de recursos para el máximo beneficio económico.",
+            "option_b": "La armonía, el respeto y la interdependencia.",
+            "option_c": "El dominio y control del ser humano sobre el entorno.",
+            "option_d": "La indiferencia y separación total.",
+            "correct_answer": "B",
+            "prize_level": 5000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 9,
+        "fields": {
+            "text": "Los 'derechos colectivos' se diferencian de los derechos individuales porque:",
+            "option_a": "Solo aplican a personas que viven en el extranjero.",
+            "option_b": "Son derechos que se titularizan a un pueblo o comunidad, no a una persona.",
+            "option_c": "Son superiores a los derechos humanos.",
+            "option_d": "Fueron eliminados en la última constitución.",
+            "correct_answer": "B",
+            "prize_level": 7500
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 10,
+        "fields": {
+            "text": "Cuando se habla de 'relaciones de poder asimétricas' entre culturas, se refiere a que:",
+            "option_a": "Todas las culturas han sido siempre tratadas como iguales.",
+            "option_b": "Algunas culturas son inherentemente más complejas que otras.",
+            "option_c": "Históricamente, ciertas culturas han dominado y subordinado a otras.",
+            "option_d": "El poder es algo que solo existe entre políticos.",
+            "correct_answer": "C",
+            "prize_level": 10000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 11,
+        "fields": {
+            "text": "Un ejemplo de 'factor externo' que influyó en el reconocimiento de derechos en Ecuador fue:",
+            "option_a": "Una crisis económica interna.",
+            "option_b": "Los convenios y declaraciones internacionales sobre Derechos Humanos.",
+            "option_c": "El resultado de las elecciones locales.",
+            "option_d": "La construcción de una nueva carretera.",
+            "correct_answer": "B",
+            "prize_level": 15000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 12,
+        "fields": {
+            "text": "El fenómeno de la 'globalización' puede afectar a la diversidad cultural al promover:",
+            "option_a": "El aislamiento completo de las comunidades.",
+            "option_b": "Un modelo cultural hegemónico que puede debilitar las identidades locales.",
+            "option_c": "Exclusivamente el intercambio equitativo entre culturas.",
+            "option_d": "La prohibición de usar tecnologías modernas.",
+            "correct_answer": "B",
+            "prize_level": 25000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 13,
+        "fields": {
+            "text": "Las 'acciones afirmativas' son políticas que buscan:",
+            "option_a": "Mantener los privilegios de los grupos dominantes.",
+            "option_b": "Compensar desventajas históricas para lograr una mayor igualdad de oportunidades.",
+            "option_c": "Afirmar que no existe la discriminación en la sociedad.",
+            "option_d": "Crear nuevas formas de segregación.",
+            "correct_answer": "B",
+            "prize_level": 50000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 14,
+        "fields": {
+            "text": "Que la sociedad ecuatoriana sea 'heterogénea' implica que:",
+            "option_a": "Todos sus miembros comparten las mismas creencias y valores.",
+            "option_b": "Está compuesta por una gran diversidad de grupos sociales, étnicos y culturales.",
+            "option_c": "Es una sociedad estática que no ha cambiado a lo largo del tiempo.",
+            "option_d": "No existen conflictos ni contradicciones internas.",
+            "correct_answer": "B",
+            "prize_level": 75000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 15,
+        "fields": {
+            "text": "Un ejemplo de un 'proceso organizativo' de los pueblos indígenas es:",
+            "option_a": "La creación de un partido político nacional.",
+            "option_b": "La formación de federaciones y confederaciones como la CONAIE.",
+            "option_c": "La organización de un campeonato deportivo.",
+            "option_d": "La apertura de una empresa privada.",
+            "correct_answer": "B",
+            "prize_level": 100000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 16,
+        "fields": {
+            "text": "La crítica al concepto de 'tolerancia' en el debate intercultural se basa en que:",
+            "option_a": "Es un concepto demasiado radical.",
+            "option_b": "Es ilegal y está prohibido por la ley.",
+            "option_c": "Puede implicar una relación desigual de 'soportar' al otro desde una posición de poder.",
+            "option_d": "No existen diferencias que necesiten ser toleradas.",
+            "correct_answer": "C",
+            "prize_level": 150000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 17,
+        "fields": {
+            "text": "La migración es un fenómeno clave para la interculturalidad porque:",
+            "option_a": "Reduce la diversidad de las ciudades.",
+            "option_b": "Genera un encuentro intensivo entre personas de diferentes culturas.",
+            "option_c": "Es un proceso que solo tiene causas económicas.",
+            "option_d": "Ocurre únicamente en zonas rurales.",
+            "correct_answer": "B",
+            "prize_level": 250000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 18,
+        "fields": {
+            "text": "El término 'equidad', a diferencia de 'igualdad', busca:",
+            "option_a": "Darle a todos exactamente lo mismo sin importar sus circunstancias.",
+            "option_b": "Darle a cada uno lo que necesita para tener las mismas oportunidades.",
+            "option_c": "Eliminar todas las diferencias entre las personas.",
+            "option_d": "Tratar a todos de la misma manera, ignorando las desventajas.",
+            "correct_answer": "B",
+            "prize_level": 500000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 19,
+        "fields": {
+            "text": "Un enfoque 'crítico' de la interculturalidad pone énfasis en:",
+            "option_a": "Aceptar el status quo sin cuestionarlo.",
+            "option_b": "Ver la cultura solo como folclor y tradición.",
+            "option_c": "Transformar las estructuras de poder que generan desigualdad.",
+            "option_d": "Fomentar el turismo como principal objetivo.",
+            "correct_answer": "C",
+            "prize_level": 750000
+        }
+    },
+    {
+        "model": "game.question",
+        "pk": 20,
+        "fields": {
+            "text": "La 'diversidad cultural' es considerada una riqueza para una sociedad porque:",
+            "option_a": "Facilita el control del Estado sobre la población.",
+            "option_b": "Complica la comunicación y genera conflictos.",
+            "option_c": "Aporta múltiples perspectivas, saberes y soluciones a los problemas comunes.",
+            "option_d": "Elimina la necesidad de tener una identidad nacional.",
+            "correct_answer": "C",
+            "prize_level": 1000000
+        }
+    }
+]

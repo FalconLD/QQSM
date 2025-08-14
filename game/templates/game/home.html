@@ -1,0 +1,16 @@
+{% extends 'game/base.html' %}
+
+{% block content %}
+<!-- Aplicamos la nueva clase para un centrado perfecto -->
+<div class="card main-menu-card"> 
+    <h2>¡Bienvenido!</h2>
+    <p class="lead">Pon a prueba tus conocimientos y gana el gran premio.</p>
+    
+    <!-- Contenedor de botones con espacio vertical -->
+    <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 400px;">
+        <a href="{% url 'play' %}" class="btn btn-primary">Iniciar Juego</a>
+        <a href="{% url 'manage_questions' %}" class="btn btn-secondary">Gestionar Preguntas</a>
+        <a href="javascript:void(0);" onclick="window.close();" class="btn btn-danger">Salir</a>
+    </div>
+</div>
+{% endblock %}
